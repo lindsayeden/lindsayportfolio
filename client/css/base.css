@@ -1,6 +1,6 @@
 body {
 		background-color: #ffffff; 
-		font-family: '';
+		font-family: 'Century Gothic';
 		overflow: auto;
 		text-align: left;
 }
@@ -53,7 +53,7 @@ header.navItem:hover{
 	}
 
 #About {
-		background-color: #FBEFF2;
+		background-color: white;
 }
 
 #Skills {
@@ -69,7 +69,7 @@ header.navItem:hover{
 }
 
 #Contact {
-		background-color: #FBEFF2;
+		background-color: white;
 }
 
 #About img.PortfolioPicture {
