@@ -81,6 +81,10 @@ header.navItem:hover{
 
 }
 
+.logo img.logo {
+	position: center;
+}
+
 .fixed-background {
 	position: fixed;
 	top: 0;
