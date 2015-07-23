@@ -14,17 +14,17 @@ header {
 
 .container {
 
-		max-width: 900px;
+		max-width: 1000px;
 		margin: 0 auto;
 		padding: 35px 0px;
 }
 
 .section {
 	margin: 80px auto;
-	max-width: 1200px;
+	max-width: 1500px;
 }
 
-nav{
+nav {
 		background-color: white;
 		height: 50px;
 		line-height: 50px;
@@ -78,6 +78,10 @@ nav a {
 	margin: 0px 0px;
 }
 
+#Resume {
+	text-align: center;
+}
+
 #Contact {
 		background-color: white;
 		text-align: center;
@@ -91,6 +95,10 @@ nav a {
 }
 
 #Resume {
+	background-color: white;
+}
+
+#Portfolio {
 	background-color: white;
 }
 
@@ -112,6 +120,10 @@ nav a {
 	height: auto;
 	display: inline-block;
 	padding-top: 80px;
+}
+
+#Video {
+	text-align: center;
 }
 
 

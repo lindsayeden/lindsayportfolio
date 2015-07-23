@@ -14,8 +14,9 @@
 	</head>
 	
 	<body>
-
+				<a href="Home" class="HomeClick"></a>	
 		<div class='fixed-background'>
+		
 			<img src='http://cache28.fansshare.com/photograph/watercolourart/watercolour-texture-by-summer-moon-watercolour-background-1644134616.jpg'>	
 		</div>
 
@@ -23,9 +24,12 @@
 			<img src='logofinal.png' class="logo">
 		</div>	
 			<nav class='fixed-nav-bar'>	
-				<a href="#About" class="AboutClick">About Me</a> 
-				<a href="#Skills" class="SkillsClick">Skills</a> 
-				<a href="#Contact" class="ContactClick">Contact</a>
+				<a href="#Home" class="HomeClick"> <i class="fa fa-home"></i> Home</a> //
+				<a href="#About" class="AboutClick"> <i class="fa fa-user"></i> About Me</a> //
+				<a href="#Skills" class="SkillsClick"> <i class="fa fa-check-square-o"></i> Skills</a> //
+				<a href="#Resume" class="ResumeClick"> <i class="fa fa-paperclip"></i></i> Resume</a> //
+				<a href="#Portfolio" class="PortfolioClick"> <i class="fa fa-folder-open"></i> Portfolio</a> //
+				<a href="#Contact" class="ContactClick"> <i class="fa fa-laptop"></i> Contact</a>
 			</nav>
 		<div id="About" class="section"> 	
 
@@ -83,12 +87,38 @@
  			</div>
  		</div>
 
- 		<div id="Resume" class='section'>
+ 	<div id="Resume" class='section'>
  		<div class='container'>
  		
  			<h1>
  				<header>Resume</header>
- 			</h1>		
+ 			</h1>
+
+ 		<a href="portfoliogoodcopy.pdf">Click to Read Resume</a>
+ 		
+ 	
+ 	<div id="Video">
+ 	</div>	
+ 		<body> 
+ 			<video width="320" height="240" controls="controls" autoplay="autoplay"> 
+ 			<source src="edenlindsay.mp4" type="video/mp4"> 
+ 			<object data="" width="320" height="240"> 
+ 			<embed width="320" height="240" src="edenlindsay.mp4"> 
+ 			</object> 
+ 			</video> 
+ 	 	</body> 	
+
+ 	</div>
+ 		</div>
+ 					
+ 		<div id="Portfolio" class="section">
+ 		<div class="contatiner">
+ 		
+ 			<h1>
+ 				<header>Portfolio</header>
+ 			</h1>
+ 		</div>
+ 		</div>		
 
  		<div id="Contact" class="section">
 		<div class='container'> 
@@ -110,12 +140,24 @@
    				$('.fixed-nav-bar').sticky({topSpacing:0});
   			});
 
+   			$('.HomeClick').click(function(){
+   					$.scrollTo($("#Home"),750)
+   			})	
+
    			$('.AboutClick').click(function(){
    					$.scrollTo($("#About"),750)
    			})	
 
    			$('.SkillsClick').click(function(){
    					$.scrollTo($("#Skills"),750)
+   			})	
+
+   			$('.ResumeClick').click(function(){
+   					$.scrollTo($("#Resume"),750)
+   			})	
+
+   			$('.PortfolioClick').click(function(){
+   					$.scrollTo($("#Portfolio"),750)
    			})	
 
    			$('.ContactClick').click(function(){
