@@ -9,7 +9,7 @@ header {
 		text-align: center;
 		font-family: 'Always In My Heart';
 		font-size: 60px;
-		font-color: #F6CED8;
+		color: #F5A9BC;
 }
 
 .container {
@@ -39,6 +39,10 @@ header.navItem:hover{
 		background-color: rgba(0, 204, 102, 0.3)
 }
 
+nav a {
+		color: white;
+		text-decoration: none;
+}
 .fixed {
 		position: fixed;
 		top: 0;
@@ -49,7 +53,7 @@ header.navItem:hover{
 .fixed-nav-bar {
 		width: 100%;
 		height: 30px;
-		background-color: #F6CED8;
+		background-color: #F5A9BC;
 		padding-top: 10px;
 		padding-bottom: 10px;
 
@@ -81,10 +85,6 @@ header.navItem:hover{
 
 }
 
-.logo img.logo {
-	position: center;
-}
-
 .fixed-background {
 	position: fixed;
 	top: 0;
@@ -95,5 +95,20 @@ header.navItem:hover{
 
 .hero {
 	height: 400px;
+	text-align: center;
 }
+
+.hero img.logo {
+	width: 200px;
+	height: auto;
+	display: inline-block;
+	padding-top: 80px;
+}
+
+
+
+
+
+
+
 		
