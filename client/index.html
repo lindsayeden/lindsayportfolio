@@ -1,44 +1,44 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-		<link rel="Stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" href="css/normalize.css"/>
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+		<link rel="Stylesheet" type="text/css" href="css/base.css"/>
+		
 		<script src='https://code.jquery.com/jquery-2.1.4.min.js'>
 		</script>
 		<script src="javascript/jquery.scrollto.min.js">
 		</script>
 		<script src='javascript/jquery.sticky.js'>
 		</script>
-		<link rel="stylesheet" href="css/normalize.css"/>
-
 	</head>
 	
 	<body>
+				<div class='hero' id="Home">	
+			<img src='logofinal.png' class="logo">
+				</div>	
+			<nav class='fixed-nav-bar'>	
+				<a class="HomeClick"> <i class="fa fa-home"></i> Home</a> //
+				<a class="AboutClick"> <i class="fa fa-user"></i> About Me</a> //
+				<a class="SkillsClick"> <i class="fa fa-check-square-o"></i> Skills</a> //
+				<a class="ResumeClick"> <i class="fa fa-paperclip"></i></i> Resume</a> //
+				<a class="PortfolioClick"> <i class="fa fa-folder-open"></i> Portfolio</a> //
+				<a class="ContactClick"> <i class="fa fa-laptop"></i> Contact</a>
+			</nav>
 				<a href="Home" class="HomeClick"></a>	
-		<div class='fixed-background'>
 		
+		<div class='fixed-background'>
 			<img src='http://cache28.fansshare.com/photograph/watercolourart/watercolour-texture-by-summer-moon-watercolour-background-1644134616.jpg'>	
 		</div>
 
-		<div class='hero'>
-			<img src='logofinal.png' class="logo">
-		</div>	
-			<nav class='fixed-nav-bar'>	
-				<a href="#Home" class="HomeClick"> <i class="fa fa-home"></i> Home</a> //
-				<a href="#About" class="AboutClick"> <i class="fa fa-user"></i> About Me</a> //
-				<a href="#Skills" class="SkillsClick"> <i class="fa fa-check-square-o"></i> Skills</a> //
-				<a href="#Resume" class="ResumeClick"> <i class="fa fa-paperclip"></i></i> Resume</a> //
-				<a href="#Portfolio" class="PortfolioClick"> <i class="fa fa-folder-open"></i> Portfolio</a> //
-				<a href="#Contact" class="ContactClick"> <i class="fa fa-laptop"></i> Contact</a>
-			</nav>
-		<div id="About" class="section"> 	
+
+		
+			<div id="About" class="section"> 	
 
 			<div class='container'>
 
 					
-				<h1>
-					<header><a>About Me</a></header>
-				</h1>					
+				<h1>About Me</h1>					
 			
 				<p>My name is Lindsay Eden and I am interested in working in the field of marketing and communications, and I excel at event planning.</p>
 				
@@ -51,14 +51,12 @@
 				<img src="lindsayportfoliopicture2.jpg" class= "PortfolioPicture" style="width:500px; height:relative"> 
 
 			</div>
-		</div>
+			</div>
 
 		<div id="Skills" class="section">
 			<div class='container'> 
 
-			<h1>
-				<header>Skills</header>
-			</h1>
+			<h1>Skills</h1>
 
 			<p>I am able to provide expertise in the following areas:</p>
 
@@ -90,50 +88,39 @@
  	<div id="Resume" class='section'>
  		<div class='container'>
  		
- 			<h1>
- 				<header>Resume</header>
- 			</h1>
+ 			<h1>Resume</h1>
 
- 		<a href="portfoliogoodcopy.pdf">Click to Read Resume</a>
+ 		<p><a href="portfoliogoodcopy.pdf" target="_blank">Click to Read Resume</a></p>
  		
  	
  	<div id="Video">
  	</div>	
  		<body> 
- 			<video width="320" height="240" controls="controls" autoplay="false"> 
+ 			<video width="500" height="relative" controls="controls" autostart="false"> 
  			<source src="edenlindsay.mp4" type="video/mp4"> 
- 			<object data="" width="320" height="240"> 
- 			<embed width="320" height="240" src="edenlindsay.mp4"> 
- 			<embed autostart="false">	
- 			</object> 
  			</video> 
  	 	</body> 	
-
  	</div>
- 		</div>
+ 	</div>
  					
  		<div id="Portfolio" class="section">
  		<div class="contatiner">
  		
- 			<h1>
- 				<header>Portfolio</header>
- 			</h1>
+ 			<h1>Portfolio</h1>
  		</div>
  		</div>		
 
  		<div id="Contact" class="section">
 		<div class='container'> 
 
-			<h1>
-				<header>Contact</header>
-			</h1>
+			<h1>Contact</h1>
 
 			<i class="fa fa-envelope"></i> 
 			<a href="mailto:lindsayeden3@gmail.com">lindsayeden3@gmail.com</a>
 			
 			<p><i class="fa fa-phone"></i> p: 519-749-5090</p>
 			
-			<i class="fa fa-linkedin-square"></i> <a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile">LinkedIn</a>
+			<i class="fa fa-linkedin-square"></i> <a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile" target="_blank">LinkedIn</a>
 		
 		</div>
 		<script>
@@ -142,27 +129,27 @@
   			});
 
    			$('.HomeClick').click(function(){
-   					$.scrollTo($("#Home"),750)
+   					$.scrollTo($("#Home").offset().top-50,750)
    			})	
 
    			$('.AboutClick').click(function(){
-   					$.scrollTo($("#About"),750)
+   					$.scrollTo($("#About").offset().top-50,750)
    			})	
 
    			$('.SkillsClick').click(function(){
-   					$.scrollTo($("#Skills"),750)
+   					$.scrollTo($("#Skills").offset().top-50,750)
    			})	
 
    			$('.ResumeClick').click(function(){
-   					$.scrollTo($("#Resume"),750)
+   					$.scrollTo($("#Resume").offset().top-50,750)
    			})	
 
    			$('.PortfolioClick').click(function(){
-   					$.scrollTo($("#Portfolio"),750)
+   					$.scrollTo($("#Portfolio").offset().top-50,750)
    			})	
 
    			$('.ContactClick').click(function(){
-   					$.scrollTo($("#Contact"),750)
+   					$.scrollTo($("#Contact").offset().top-50,750)
    			})	
 		</script>
 	</body>
