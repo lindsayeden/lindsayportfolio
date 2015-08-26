@@ -1,6 +1,6 @@
 body {
 		background-color: #ffffff; 
-		font: 13px 'Helvetica', 'Arial', sans serif;
+		font: 14px 'Helvetica', 'Arial', sans serif;
 		overflow: auto;
 		text-align: left;
 
@@ -36,11 +36,16 @@ nav {
 		height: 50px;
 		line-height: 50px;
 		text-align: center;
-		font: #ffffff;
+		z-index: 9999;
+		width: 100%;
+		color: #ffffff;
+		padding-top: 2px;
+		padding-bottom: 2px;
+
 }
 
 .fixed-nav-bar a {
-		color: #ffffff;
+		color: white;
 		text-decoration: none;
 		cursor: pointer;
 		transition: all 0.5s ease;
@@ -63,17 +68,8 @@ div a {
 		z-index: 9999;
 }
 
-.fixed-nav-bar {
-		width: 100%;
-		background-color: #F5A9BC;
-		color: #ffffff;
-		padding-top: 2px;
-		padding-bottom: 2px;
-	}
-
 #About {
 		background-color: white;
-		margin-top: 0
 }
 
 #Skills {
@@ -113,6 +109,7 @@ div a {
 
 #Portfolio {
 	background-color: white;
+	margin-top: 0;
 }
 
 .fixed-background {
